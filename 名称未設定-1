@@ -1,4 +1,6 @@
 <?php
 echo "test";
-echo "2回目のテスト"
+echo "2回目のテスト";
+echo "3回目のテスト";
+
 
