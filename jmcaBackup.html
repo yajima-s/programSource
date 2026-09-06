@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>JMCA関係主要EXEL，DB,xamppバックアップ</title>
+</head>
+<body>
+<?php
+if (isset($_GET['error'])) {
+    echo htmlspecialchars($_GET['error'], ENT_QUOTES, 'UTF-8');
+}
+?>
+<h3>バックアップする項目を選択してください</h3>
+<h3>処理を１つ選んでください</h3>
+
+    <form action="jmcaBackup_furiwake.php" method="post">
+        <label><input type="radio" name="choice" value="excel"> 全てのバックアップを一括して作成</label><br>
+        <label><input type="radio" name="choice" value="db"> jmcaDBのSQLバックアップ＋xammpのバックアップ作成</label><br>
+        <label><input type="radio" name="choice" value="xampp"> Xamppのバックアップのみ作成</label><br>
+        <input type="submit" value="選択">
+    </form>
+
+
+
+</body>
+</html>
